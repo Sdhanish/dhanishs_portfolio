@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal-Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Dhanish S-logos_white.png" type="image/png">
+  <script src="https://kit.fontawesome.com/53e7910272.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header"> 
+    <div class="container">
+      <nav>
+        <a href="#about"><img src="images/Dhanish S-logos_white.png" class="logo" alt=""></a>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">My-Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>MERN Stack Developer</p>
+        <h1>Hi, I'm <span>Dhanish</span> S  </h1>
+      </div>
+    </div>
+  </div>
+<!----------------------about section start------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/mypic3.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p style="text-align: justify; line-height: 28px;">I'm Dhanish, a passionate MERN stack developer with expertise in JavaScript, Node.js, React.js , and MongoDB. I enjoy building dynamic and responsive web applications, utilizing my skills to create seamless user experiences and scalable solutions. With a strong foundation in both front-end and back-end development, I am committed to delivering efficient,  high-quality code and continuously improving my technical abilities</p>
+          <div class="tab-titles">
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+           
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li style="margin-bottom: 9px; line-height: 25px;"><span>Full Stack Development</span><br>Node js,Express js,Mongo DB</li>         
+              <li  style="margin-bottom: 9px; line-height: 25px;"><span>Frontend Development</span><br>React js,Tailwind css</li>   
+              <li style="margin-bottom: 9px; line-height: 25px;"><span>Static websites</span><br>HTML, CSS, Javascript, Jquery, Ajax, Bootstrap</li>   
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li style="margin-bottom: 9px; line-height: 25px;"><span>MERN Stack Development</span><br>
+                3 Month Training Program<br>At Techmindz,Infopark,Kochi</li>
+              <li><span>Certificate Link : </span><a href="https://drive.google.com/file/d/1Z7wRmfkDasRP6zpL77fJ62lnPWE91eb7/view?usp=drive_link" style="color: white; text-decoration: none;;">Click here</a></li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="education">
+            <ul>
+              <li  style="margin-bottom: 9px; line-height: 25px;"><span>Master of Computer Application (MCA)</span><br>
+                  <span style="color: rgb(204, 204, 204);">College :</span> Mount Zion College of Engineering ,<br><span style="color: rgb(169, 169, 169); font-size: 17px;">Kadammanita,Pathanamthitta</span>
+                <br><span style="color: rgb(204, 204, 204);">University :</span> Abdul Kalam Technical University,2023-2025</li>
+              <li style="margin-bottom: 9px; line-height: 25px;"><span>Bachelor of Computer Application</span><br>Mahatma Gandhi University, 2019-22</li>
+              <li style="margin-bottom: 9px; line-height: 25px;"><span>Higher Secondary</span><br>Central Board of Education,2019</li>
+             
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------About section end-------------------->
+
+  <!--Services-->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="service-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Full Stack Web Development (MERN Stack)</h2>
+        <p style="font-size: 16px; line-height: 25px;">Offering complete web development services using MongoDB, Express.js, React.js, and Node.js to build efficient, scalable applications with seamless user experiences.</p>
+       
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Front-End Development</h2>
+        <p style="font-size: 16px; line-height: 25px;">Specialized in designing sleek and user-friendly interfaces using React and Tailwind CSS, creating visually appealing and responsive designs.</p>
+        
+      </div>
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>API Development and Integration</h2>
+        <p style="font-size: 16px; line-height: 25px;">I offer custom API development and integration services using Node.js and Express.js, ensuring seamless communication between front-end and back-end systems.</p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!--------services end-------->
+
+
+<!--------Portfolio start-------->
+<div id="portfolio">
+  <div class="container">
+    <h2 class="sub-title">
+       My Works
+    </h2>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Why-Add-Images-To-Blog-Posts-Visual-Experience.jpg" alt="">
+        <div class="layer">
+          <h3>Blog Posting Platform</h3>
+          <p>I developed a dynamic and user-friendly blog platform using the MERN stack (MongoDB, Express.js, React.js, and Node.js). The website allows users to create, read, update, and delete blog posts with ease. With a clean and responsive design, it offers features like user authentication, category-based content filtering, and real-time content updates. The back-end is powered by Node.js and Express.js, ensuring seamless API handling, while MongoDB stores user data and posts securely. React.js and Tailwind CSS handle the front-end, providing a smooth and engaging user experience.</p>
+          <a href=""><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/pngtree-home-office-portraits-use-computers-to-study-and-work-image_762340.jpg" alt="">
+        <div class="layer">
+          <h3>Edu learn</h3>
+          <p>EduLearn is an interactive online learning platform built using React.js, designed to offer a seamless and engaging educational experience. The platform provides users with access to a variety of courses, lessons, and learning resources. It features a user-friendly interface with dynamic components, allowing learners to easily navigate through course materials, track progress, and participate in quizzes. Leveraging React's state management, EduLearn ensures smooth content delivery and real-time updates. The platform is fully responsive, making it accessible across all devices, and offers an optimized learning experience for students and educators alike.</p>
+          <a href=""><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/sunrise-beach-yoga-at.jpg" alt="">
+        <div class="layer">
+          <h3>Yoga Connect</h3>
+          <p>Yoga Connect is a holistic platform for yoga and mindfulness, designed to connect users with expert instructors and personalized classes. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), the platform offers a smooth and intuitive user experience, enabling users to browse and enroll in yoga and meditation classes, manage schedules, and make secure payments via Stripe integration. With role-based functionalities, admins can manage instructors and classes, while users can track their progress and explore wellness content. Yoga Connect is crafted with Tailwind CSS for a clean and responsive design, providing users with a seamless and calming interface.</p>
+          <a href=""><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!--------Portfolio end-------->
+
+<!--------Contact Start---------->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-envelope"></i> sdhanish92@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 7909122902</p>
+        <div class="social-media-icons">
+          <a href=""><i class="fa-brands fa-git"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <a href="images/Dhanish_Resume.pdf" download class="btn btn-2">Download CV</a>
+      </div>
+      <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="6" placeholder="Drop Your Message Here.."></textarea>
+        <button type="submit" class="btn btn-2 ">Submit</button>
+      </form>
+      <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &copy Dhanish S. <i class="fa-solid fa-pen"></i> 2023 </p>
+  </div>
+</div>
+<!--------Contact End------->
+
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links') 
+
+    var tabcontents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove('active-links'); 
+      }   // removing underlines
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove('active-tab');
+      } ///removing descriptions
+
+      event.currentTarget.classList.add("active-links"); // adding the underline when clicking on current heading
+      document.getElementById(tabname).classList.add('active-tab');
+    }
+
+    var sidemenu = document.getElementById('sidemenu'); //get the side menu using id 
+
+    function openmenu(){
+      sidemenu.style.right='0'
+    }
+    function closemenu(){
+      sidemenu.style.right='-200px'
+    }
+  </script>
+
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyr-fpMXBc8E7g64Ki0CxMYESDYCeLoMZCSfEeHnEklN3tIeGsdAiLiZykyf9VVO4tB/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  const msg = document.getElementById('msg')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
